@@ -1,0 +1,66 @@
+name: lapis2026
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python & Build Tools (Python 3.12 required for Agama + nbody_streams compatibility)
+  - python=3.12
+  - pip
+  - setuptools>=61.0
+  - wheel
+  - cython
+  - compilers
+  - gsl
+  - git
+
+  # Core Scientific & Data Science Stack
+  - numpy>=1.24,<2.0
+  - scipy>=1.10
+  - matplotlib>=3.7
+  - pandas>=2.0
+  - scikit-learn>=1.2
+  - seaborn
+  - h5py>=3.8
+  - numba>=0.57
+  - dask
+  - pyarrow
+  - tqdm
+  - dill
+  - configobj
+
+  # Jupyter & Interactive Environment
+  - jupyter
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipywidgets
+
+  # Standard Astrophysical Stack
+  - astropy>=5.3
+  - photutils
+  - healpy
+  - corner
+  - emcee
+  - dynesty
+  - sep
+
+  # Clustering, Optimization & Visualization Extras
+  - hdbscan
+  - cvxopt
+  - cmasher
+  - pyqt
+
+  # Pip-installed Astrophysical & Professor-Specific Packages
+  - pip:
+      # IllustrisTNG tools (Prof. Facundo Gomez)
+      - pytng
+      - git+https://github.com/illustristng/illustris_python.git
+      # LSDB / DES Y6 Gold tools (Prof. Peter Fergusson)
+      - lsdb
+      - nested-pandas
+      # Chemical evolution & IRAF interface (Prof. Ivana Escala & Prof. Celeste Parisi)
+      - vice
+      - pyraf
+      # Stellar streams N-body tools (Prof. Nicolas Garavito)
+      - "nbody_streams @ git+https://github.com/appy2806/Nbody_streams.git"
+

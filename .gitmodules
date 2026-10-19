@@ -1,0 +1,30 @@
+[submodule "aminahelmi"]
+	path = aminahelmi
+	url = https://github.com/LAPIS-2026/aminahelmi.git
+[submodule "antonelamonachesi"]
+	path = antonelamonachesi
+	url = https://github.com/LAPIS-2026/antonelamonachesi.git
+[submodule "ceciliamateu"]
+	path = ceciliamateu
+	url = https://github.com/LAPIS-2026/ceciliamateu.git
+[submodule "celesteparisi"]
+	path = celesteparisi
+	url = https://github.com/LAPIS-2026/celesteparisi.git
+[submodule "davidcerdeno"]
+	path = davidcerdeno
+	url = https://github.com/LAPIS-2026/davidcerdeno.git
+[submodule "facundogomez"]
+	path = facundogomez
+	url = https://github.com/LAPIS-2026/facundogomez.git
+[submodule "ivaescala"]
+	path = ivaescala
+	url = https://github.com/LAPIS-2026/ivaescala.git
+[submodule "nicolasgaravito"]
+	path = nicolasgaravito
+	url = https://github.com/LAPIS-2026/nicolasgaravito.git
+[submodule "peterfergusson"]
+	path = peterfergusson
+	url = https://github.com/LAPIS-2026/peterfergusson.git
+[submodule "rodrigoibata"]
+	path = rodrigoibata
+	url = https://github.com/LAPIS-2026/rodrigoibata.git
