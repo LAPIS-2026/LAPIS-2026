@@ -4,9 +4,32 @@ Guía de configuración del entorno estándar de Python y de los repositorios de
 
 ---
 
-## 1. Estructura de Directorios y Repositorios por Profesor
+## 1. Inicio Rápido: Clonar Todo el Repositorio de la Escuela e Instalar el Entorno
 
-Cada profesor cuenta con su propio repositorio dentro de la organización [`@LAPIS-2026`](https://github.com/LAPIS-2026):
+Para descargar **todos** los repositorios de los profesores y sus submódulos de una sola vez:
+
+```bash
+git clone --recurse-submodules https://github.com/LAPIS-2026/LAPIS-2026.git
+cd LAPIS-2026
+```
+
+*(Si ya clonaste el repositorio sin `--recurse-submodules`, inicializa y descarga todos los submódulos anidados ejecutando `git submodule update --init --recursive`).*
+
+Una vez dentro de `LAPIS-2026/`, crea y activa el entorno estándar de la escuela a partir de [`lapis2026.yaml`](./lapis2026.yaml) usando **Conda** o **Mamba** (recomendado [Miniforge](https://github.com/conda-forge/miniforge)):
+
+```bash
+conda env create -f lapis2026.yaml
+conda activate lapis2026
+python -m ipykernel install --user --name lapis2026 --display-name "Python (LAPIS 2026)"
+```
+
+*(Si tienes `mamba` instalado, puedes usar `mamba env create -f lapis2026.yaml` para una instalación más rápida).*
+
+---
+
+## 2. Estructura de Directorios y Repositorios por Profesor
+
+Cada profesor cuenta con su propio directorio/submódulo dentro de [`LAPIS-2026`](https://github.com/LAPIS-2026/LAPIS-2026) (que también puede clonarse de forma individual desde [`@LAPIS-2026`](https://github.com/LAPIS-2026)):
 
 | Profesor/a | Directorio / Repo | Submódulos y Recursos Incluidos |
 | :--- | :--- | :--- |
@@ -23,32 +46,11 @@ Cada profesor cuenta con su propio repositorio dentro de la organización [`@LAP
 
 ---
 
-## 2. Instalación del Entorno Conda (`lapis2026.yaml`)
+## 3. Contenido del Entorno (`lapis2026.yaml`) y Paquetes Compilados
 
 El archivo [`lapis2026.yaml`](./lapis2026.yaml) instala la pila astrofísica y de ciencia de datos estándar (`numpy`, `scipy`, `matplotlib`, `pandas`, `jupyter`, `corner`, `astropy`, `scikit-learn`, `healpy`, `photutils`, `h5py`, `numba`, `emcee`, `dynesty`, `pytng`, `illustris_python`, `lsdb`, `vice`, `pyraf`, `nbody_streams`, etc.).
 
-### Paso 1: Crear y activar el entorno
-
-Usando **Conda** o **Mamba** (recomendado [Miniforge](https://github.com/conda-forge/miniforge)):
-
-```bash
-conda env create -f lapis2026.yaml
-conda activate lapis2026
-```
-
-*(Si tienes `mamba` instalado, puedes ejecutar `mamba env create -f lapis2026.yaml` para una instalación más rápida).*
-
-### Paso 2: Registrar el kernel en Jupyter
-
-```bash
-python -m ipykernel install --user --name lapis2026 --display-name "Python (LAPIS 2026)"
-```
-
----
-
-## 3. Instalación de Paquetes Compilados y Submódulos Locales
-
-Una vez activado el entorno `conda activate lapis2026`, ejecuta los siguientes pasos según las prácticas que vayas a realizar:
+Una vez activado el entorno (`conda activate lapis2026`), ejecuta los siguientes pasos adicionales según las prácticas que vayas a realizar:
 
 ### A. Compilar `Agama` (Práctico Prof. Nicolás Garavito)
 `Agama` requiere que `numpy` y `gsl` ya estén presentes en el entorno antes de compilarse:
@@ -86,17 +88,11 @@ python -m ipykernel install --user --name lapis2026-vaex --display-name "Python 
 
 ---
 
-## 4. Cómo Clonar los Repositorios de Cada Profesor
+## 4. Clonar el Repositorio de un Solo Profesor (Opcional)
 
-Para clonar el repositorio de cualquier profesor junto con todos sus submódulos:
+Si solo deseas clonar el repositorio de un profesor en particular junto con sus submódulos:
 
 ```bash
 git clone --recurse-submodules https://github.com/LAPIS-2026/<profesor>.git
-```
-
-Si ya clonaste un repositorio sin `--recurse-submodules`, inicializa los submódulos dentro del directorio con:
-
-```bash
-git submodule update --init --recursive
 ```
 
