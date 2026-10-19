@@ -48,7 +48,7 @@ Cada profesor cuenta con su propio directorio/submódulo dentro de [`LAPIS-2026`
 
 ## 3. Contenido del Entorno (`lapis2026.yaml`) y Paquetes Compilados
 
-El archivo [`lapis2026.yaml`](./lapis2026.yaml) instala la pila astrofísica y de ciencia de datos estándar (`numpy`, `scipy`, `matplotlib`, `pandas`, `jupyter`, `corner`, `astropy`, `scikit-learn`, `healpy`, `photutils`, `h5py`, `numba`, `emcee`, `dynesty`, `pytng`, `illustris_python`, `lsdb`, `vice`, `pyraf`, `nbody_streams`, etc.).
+El archivo [`lapis2026.yaml`](./lapis2026.yaml) instala la pila astrofísica, de dinámica galáctica y de ciencia de datos requerida por los cursos (`numpy`, `scipy`, `matplotlib`, `pandas`, `jupyter`, `corner`, `astropy`, `astroquery`, `gala`, `galpy`, `scikit-learn`, `scikit-image`, `healpy`, `healsparse`, `photutils`, `regions`, `astroplan`, `h5py`, `numba`, `emcee`, `dynesty`, `iraf`, `pyraf`, `r-base`, `r-irkernel`, `pytng`, `illustris_python`, `lsdb`, `galstreams`, `dustmaps`, `astroML`, `vice`, `nbody_streams` y `rrl_completeness`).
 
 Una vez activado el entorno (`conda activate lapis2026`), ejecuta los siguientes pasos adicionales según las prácticas que vayas a realizar:
 
@@ -67,14 +67,15 @@ Puedes verificar la instalación del práctico de Nicolás Garavito ejecutando:
 python nicolasgaravito/LAPIS26/check_install.py
 ```
 
-### B. Instalar paquetes locales de los submódulos en modo editable
+### B. Instalar `pyds9plugin` en modo editable (Práctico Prof. Antonela Monachesi)
+
+*(Nota: `rrl_completeness` de la Prof. Cecilia Mateu ya se instala automáticamente en modo editable al crear el entorno con `lapis2026.yaml`).*
+
+Para instalar el plug-in de DS9 de la Prof. Antonela Monachesi usando las dependencias ya presentes en el entorno:
 
 ```bash
-# RR Lyrae completeness maps (Prof. Cecilia Mateu)
-pip install -e ./ceciliamateu/rrl_completeness
-
 # DS9 Quick-Look plug-in (Prof. Antonela Monachesi)
-pip install -e ./antonelamonachesi/pyds9plugin
+pip install --no-deps -e ./antonelamonachesi/pyds9plugin
 ```
 
 ### C. Nota para `IOM_clustering` (Prof. Amina Helmi)

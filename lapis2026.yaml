@@ -13,20 +13,38 @@ dependencies:
   - gsl
   - git
 
+  # R Environment (Prof. Celeste Parisi — Star Clusters / CaT Metallicities)
+  - r-base
+  - r-irkernel
+
+  # IRAF / PyRAF (Prof. Celeste Parisi)
+  - iraf
+  - pyraf
+
   # Core Scientific & Data Science Stack
   - numpy>=1.24,<2.0
   - scipy>=1.10
   - matplotlib>=3.7
   - pandas>=2.0
   - scikit-learn>=1.2
+  - scikit-image
+  - imageio
+  - pillow
   - seaborn
+  - xarray
   - h5py>=3.8
   - numba>=0.57
   - dask
   - pyarrow
   - tqdm
+  - progressbar2
+  - rich
+  - tabulate
   - dill
   - configobj
+  - pyyaml
+  - requests
+  - beautifulsoup4
 
   # Jupyter & Interactive Environment
   - jupyter
@@ -34,11 +52,18 @@ dependencies:
   - notebook
   - ipykernel
   - ipywidgets
+  - ipympl
 
-  # Standard Astrophysical Stack
+  # Standard Astrophysical, Survey & Galactic Dynamics Stack
   - astropy>=5.3
+  - astroquery
+  - astroplan
+  - regions
   - photutils
   - healpy
+  - healsparse
+  - gala
+  - galpy
   - corner
   - emcee
   - dynesty
@@ -52,15 +77,20 @@ dependencies:
 
   # Pip-installed Astrophysical & Professor-Specific Packages
   - pip:
-      # IllustrisTNG tools (Prof. Facundo Gomez)
+      # IllustrisTNG tools (Prof. Facundo Gómez)
       - pytng
       - git+https://github.com/illustristng/illustris_python.git
-      # LSDB / DES Y6 Gold tools (Prof. Peter Fergusson)
+      # LSDB / DES Y6 Gold & Stellar Streams tools (Prof. Peter Ferguson & Prof. Cecilia Mateu)
       - lsdb
       - nested-pandas
-      # Chemical evolution & IRAF interface (Prof. Ivana Escala & Prof. Celeste Parisi)
+      - galstreams
+      - dustmaps
+      - astroML
+      # Chemical evolution (Prof. Ivanna Escala)
       - vice
-      - pyraf
-      # Stellar streams N-body tools (Prof. Nicolas Garavito)
+      # DS9 Quick-Look plugin dependencies (Prof. Antonela Monachesi)
+      - dataphile
+      # Stellar streams N-body tools (Prof. Nicolás Garavito-Camargo)
       - "nbody_streams @ git+https://github.com/appy2806/Nbody_streams.git"
-
+      # Local editable professor package: RR Lyrae completeness (Prof. Cecilia Mateu)
+      - -e ./ceciliamateu/rrl_completeness
