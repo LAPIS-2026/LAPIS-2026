@@ -1,6 +1,6 @@
 # LAPIS 2026 — Repositorios y Entorno de Software para Prácticos
 
-Guía de configuración del entorno estándar de Python y de los repositorios de cada profesor para las prácticas de la escuela **XII LAPIS 2026**.
+Guía de configuración del entorno estándar de Python, instrucciones de los proyectos y repositorios de cada profesor para las prácticas de la escuela **[XII LAPIS 2026](https://congresos.unlp.edu.ar/xiilapis2026/softwares-and-catalogues/)**.
 
 ---
 
@@ -27,22 +27,22 @@ python -m ipykernel install --user --name lapis2026 --display-name "Python (LAPI
 
 ---
 
-## 2. Estructura de Directorios y Repositorios por Profesor
+## 2. Estructura de Directorios, Instrucciones (Google Drive) y Recursos por Profesor
 
 Cada profesor cuenta con su propio directorio/submódulo dentro de [`LAPIS-2026`](https://github.com/LAPIS-2026/LAPIS-2026) (que también puede clonarse de forma individual desde [`@LAPIS-2026`](https://github.com/LAPIS-2026)):
 
-| Profesor/a | Directorio / Repo | Submódulos y Recursos Incluidos |
-| :--- | :--- | :--- |
-| **Prof. Ivana Escala** | [`ivaescala/`](./ivaescala) | [`VICE`](https://github.com/giganano/VICE), [`emcee`](https://github.com/dfm/emcee), [`dynesty`](https://github.com/joshspeagle/dynesty) |
-| **Prof. Amina Helmi** | [`aminahelmi/`](./aminahelmi) | [`IOM_clustering`](https://github.com/SofieLovdal/IOM_clustering) |
-| **Prof. Cecilia Mateu** | [`ceciliamateu/`](./ceciliamateu) | [`rrl_completeness`](https://github.com/cmateu/rrl_completeness) |
-| **Prof. Antonela Monachesi** | [`antonelamonachesi/`](./antonelamonachesi) | [`pyds9plugin`](https://github.com/vpicouet/pyds9plugin) |
-| **Prof. Celeste Parisi** | [`celesteparisi/`](./celesteparisi) | [`pyraf`](https://github.com/iraf-community/pyraf) |
-| **Prof. Nicolás Garavito** | [`nicolasgaravito/`](./nicolasgaravito) | [`LAPIS26`](https://github.com/jngaravitoc/LAPIS26) (`Agama`, `nbody_streams`) |
-| **Prof. Peter Fergusson** | [`peterfergusson/`](./peterfergusson) | Datos DES Y6 Gold: [`data.lsdb.io/DES/DES_Y6_Gold_(US-West,_HTTP)`](http://data.lsdb.io/DES/DES_Y6_Gold_\(US-West%2C_HTTP\)) |
-| **Prof. Facundo Gómez** | [`facundogomez/`](./facundogomez) | Datos IllustrisTNG: [`tng-project.org/data`](https://www.tng-project.org/data/) (`pytng`, `illustris_python`) |
-| **Prof. David Cerdeño** | [`davidcerdeno/`](./davidcerdeno) | Materiales del práctico |
-| **Prof. Rodrigo Ibata** | [`rodrigoibata/`](./rodrigoibata) | Materiales del práctico |
+| Profesor/a | Directorio / Repo | Instrucciones del Práctico | Software, Datos y Requisitos Previos |
+| :--- | :--- | :--- | :--- |
+| **Prof. Amina Helmi** | [`aminahelmi/`](./aminahelmi) | [Descripción del proyecto (Drive)](https://drive.google.com/file/d/1VS7VQuLhsBE84s6EhljcN_0PydGDXkS0/view?usp=sharing) | Submódulo [`IOM_clustering`](https://github.com/SofieLovdal/IOM_clustering). **Crear cuenta previa** en Gaia Archive / Gaia DataLab. |
+| **Prof. David Cerdeño** | [`davidcerdeno/`](./davidcerdeno) | [Descripción del proyecto (Drive)](https://drive.google.com/file/d/1Yolh2rlnA2oWj7c9BB_FPYhOuzrthl4S/view?usp=sharing) | Detección directa de materia oscura (espectros de retroceso en Xe / LZ). |
+| **Prof. Celeste Parisi** | [`celesteparisi/`](./celesteparisi) | [Descripción del proyecto (Drive)](https://drive.google.com/file/d/1rmb1D3DQWjUif6HOHRlrk4chEcl-mfbV/view?usp=sharing) | Submódulo [`pyraf`](https://github.com/iraf-community/pyraf) (R, IRAF/PyRAF). Datos provistos por la profesora. |
+| **Prof. Ivanna Escala** | [`ivaescala/`](./ivaescala) | [Ver `ivaescala/README.md`](./ivaescala/README.md) | Submódulos [`VICE`](https://github.com/giganano/VICE), [`emcee`](https://github.com/dfm/emcee), [`dynesty`](https://github.com/joshspeagle/dynesty). Datos provistos por la profesora. |
+| **Prof. Facundo Gómez** | [`facundogomez/`](./facundogomez) | [Ver `facundogomez/README.md`](./facundogomez/README.md) | Plataforma y datos en [`tng-project.org/data`](https://www.tng-project.org/data/) (`pytng`, `illustris_python`). **Crear cuenta previa** en IllustrisTNG. |
+| **Prof. Peter Ferguson** | [`peterfergusson/`](./peterfergusson) | [Ver `peterfergusson/README.md`](./peterfergusson/README.md) | Catálogo [DES Y6 Gold (LSDB)](http://data.lsdb.io/DES/DES_Y6_Gold_\(US-West%2C_HTTP\)). |
+| **Prof. Cecilia Mateu** | [`ceciliamateu/`](./ceciliamateu) | [Ver `ceciliamateu/README.md`](./ceciliamateu/README.md) | Submódulo [`rrl_completeness`](https://github.com/cmateu/rrl_completeness). Datos provistos por la profesora. |
+| **Prof. Antonela Monachesi** | [`antonelamonachesi/`](./antonelamonachesi) | [Ver `antonelamonachesi/README.md`](./antonelamonachesi/README.md) | Submódulo [`pyds9plugin`](https://github.com/vpicouet/pyds9plugin), Python y DS9. Imágenes HST y catálogos GHOSTS. |
+| **Prof. Nicolás Garavito** | [`nicolasgaravito/`](./nicolasgaravito) | [Ver `LAPIS26/README.md`](./nicolasgaravito/LAPIS26/README.md) | Submódulo [`LAPIS26`](https://github.com/jngaravitoc/LAPIS26) (`Agama`, `nbody_streams`). |
+| **Prof. Rodrigo Ibata** | [`rodrigoibata/`](./rodrigoibata) | [Ver `rodrigoibata/README.md`](./rodrigoibata/README.md) | Datos y software disponibles mediante **Google Colab** (`AI-Kepler`, `LeMondeModèle`, `Symplectomania`). |
 
 ---
 
@@ -95,4 +95,3 @@ Si solo deseas clonar el repositorio de un profesor en particular junto con sus 
 ```bash
 git clone --recurse-submodules https://github.com/LAPIS-2026/<profesor>.git
 ```
-
