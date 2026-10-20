@@ -36,6 +36,7 @@ dependencies:
   - numba>=0.57
   - dask
   - pyarrow
+  - s3fs
   - tqdm
   - progressbar2
   - rich
@@ -62,6 +63,7 @@ dependencies:
   - photutils
   - healpy
   - healsparse
+  - skyproj
   - gala
   - galpy
   - corner
@@ -84,6 +86,7 @@ dependencies:
       - lsdb
       - nested-pandas
       - galstreams
+      - git+https://github.com/DarkEnergySurvey/ugali.git
       - dustmaps
       - astroML
       # Chemical evolution (Prof. Ivanna Escala)
