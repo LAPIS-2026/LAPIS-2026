@@ -22,9 +22,9 @@
 [submodule "nicolasgaravito"]
 	path = nicolasgaravito
 	url = https://github.com/LAPIS-2026/nicolasgaravito.git
-[submodule "peterfergusson"]
-	path = peterfergusson
-	url = https://github.com/LAPIS-2026/peterfergusson.git
+[submodule "peterferguson"]
+	path = peterferguson
+	url = https://github.com/LAPIS-2026/peterferguson.git
 [submodule "rodrigoibata"]
 	path = rodrigoibata
 	url = https://github.com/LAPIS-2026/rodrigoibata.git
